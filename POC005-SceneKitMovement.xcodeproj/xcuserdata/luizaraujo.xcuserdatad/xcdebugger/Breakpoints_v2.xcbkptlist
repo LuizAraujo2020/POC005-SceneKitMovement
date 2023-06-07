@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F6856013-4257-4BCA-AE6D-E65982A38933"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9039220-5938-4EC6-8416-44F2A6A406D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POC005-SceneKitMovement/Flows/Movement/GameMovement.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "loadAnimation(withKey:sceneName:animationIdentifier:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A9039220-5938-4EC6-8416-44F2A6A406D4 - efb415860b796dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "POC005_SceneKitMovement.GameMovement.loadAnimation(withKey: Swift.String, sceneName: Swift.String, animationIdentifier: Swift.String) -&gt; ()"
+                  moduleName = "POC005-SceneKitMovement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaraujo/Documents/GitHub/Projetos/Eldorado/Galileu/POCs/POC005-SceneKitMovement/POC005-SceneKitMovement/Flows/Movement/GameMovement.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "1351">
+               </Location>
+               <Location
+                  uuid = "A9039220-5938-4EC6-8416-44F2A6A406D4 - efb415860b7961a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "POC005_SceneKitMovement.GameMovement.loadAnimation(withKey: Swift.String, sceneName: Swift.String, animationIdentifier: Swift.String) -&gt; ()"
+                  moduleName = "POC005-SceneKitMovement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaraujo/Documents/GitHub/Projetos/Eldorado/Galileu/POCs/POC005-SceneKitMovement/POC005-SceneKitMovement/Flows/Movement/GameMovement.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "936">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "004A2979-B552-4174-8773-A25752EA0F4A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POC005-SceneKitMovement/Flows/Movement/GameMovement.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "loadAnimation(withKey:sceneName:animationIdentifier:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "004A2979-B552-4174-8773-A25752EA0F4A - efb415860b79171"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "POC005_SceneKitMovement.GameMovement.loadAnimation(withKey: Swift.String, sceneName: Swift.String, animationIdentifier: Swift.String) -&gt; ()"
+                  moduleName = "POC005-SceneKitMovement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaraujo/Documents/GitHub/Projetos/Eldorado/Galileu/POCs/POC005-SceneKitMovement/POC005-SceneKitMovement/Flows/Movement/GameMovement.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "1151">
+               </Location>
+               <Location
+                  uuid = "004A2979-B552-4174-8773-A25752EA0F4A - efb415860b7961a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "POC005_SceneKitMovement.GameMovement.loadAnimation(withKey: Swift.String, sceneName: Swift.String, animationIdentifier: Swift.String) -&gt; ()"
+                  moduleName = "POC005-SceneKitMovement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaraujo/Documents/GitHub/Projetos/Eldorado/Galileu/POCs/POC005-SceneKitMovement/POC005-SceneKitMovement/Flows/Movement/GameMovement.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "936">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

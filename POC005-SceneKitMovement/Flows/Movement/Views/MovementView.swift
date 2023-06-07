@@ -15,15 +15,14 @@ struct MovementView: View {
     @State private var magnification    = CGFloat(1.0)
     @State private var totalChangePivot = SCNMatrix4Identity
     
-    @ObservedObject var game: Movement
+    @ObservedObject var game: GameMovement
     
-    init(game: Movement) {
+    init(game: GameMovement) {
         self.game = game
     }
     
     var body: some View {
         ZStack {
-            SpriteView(scene: game.skScene)
             VStack {
                 SceneView(scene: game.scene,
                           pointOfView: game.cameraNode,
@@ -32,8 +31,26 @@ struct MovementView: View {
                           ], delegate: game)
                 .ignoresSafeArea()
                 .gesture(exclusiveGesture)
+                .onTapGesture {
+                    game.idle += 1
+                    if game.idle > 2 {
+                        game.idle = 0
+                    }
+//                    if hitResults.first != nil {
+                    if(game.idle == 0) {
+                        game.playAnimation(key: "idle")
+                    } else if(game.idle == 1) {
+                        game.playAnimation(key: "pick")
+                    } else if(game.idle == 2) {
+                        game.stopAnimation(key: "walk")
+                    }
+//                        game.idle = !game.idle
+//                        return
+//                    }
+                }
             }
             
+            HUDMovement(count: $game.count)
         }
     }
     
@@ -42,16 +59,16 @@ struct MovementView: View {
         DragGesture()
             .onChanged { value in
                 self.game.isDragging = true
-                
+
                 if game.virtualDPad().contains(value.location) {
                     let middleOfCircleX = game.virtualDPad().origin.x + 75
                     let middleOfCircleY = game.virtualDPad().origin.y + 75
-                    
+
                     let lengthOfX = Double(value.location.x - middleOfCircleX)
                     let lengthOfY = Double(value.location.y - middleOfCircleY)
-                    
+
                     game.direction = normalize(SIMD2(x: lengthOfX, y: lengthOfY))
-                    
+
                     let degree = atan2(game.direction.x, game.direction.y)
                     game.playerNode.directionAngle = SCNFloat(degree)
                 }
@@ -66,9 +83,9 @@ struct MovementView: View {
         MagnificationGesture()
             .onChanged{ (value) in
                 print("magnify = \(self.magnification)")
-                
+
                 self.magnification = value
-                
+
                 changeCameraFOV(of: game.cameraNode.camera!,
                                 value: self.magnification)
             }
@@ -110,6 +127,7 @@ struct MovementView: View {
 
 struct MovementView_Previews: PreviewProvider {
     static var previews: some View {
-        MovementView(game: Movement())
+        MovementView(game: GameMovement())
     }
 }
+

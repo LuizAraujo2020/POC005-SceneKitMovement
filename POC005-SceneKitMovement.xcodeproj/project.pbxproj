@@ -15,20 +15,28 @@
 		6F60C5842A2CCEA600487400 /* ShineComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60C57B2A2CCEA500487400 /* ShineComponent.swift */; };
 		6F60C5852A2CCEA600487400 /* GeometryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60C57C2A2CCEA500487400 /* GeometryComponent.swift */; };
 		6F60C5872A2CCEA600487400 /* PlayerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60C57F2A2CCEA500487400 /* PlayerFactory.swift */; };
-		6F60C5C32A2CF1F400487400 /* catalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F60C5C22A2CF1F400487400 /* catalog.scnassets */; };
 		6F6BB49E2A2CC10100228E6D /* POC005_SceneKitMovementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6BB49D2A2CC10100228E6D /* POC005_SceneKitMovementApp.swift */; };
 		6F6BB4A22A2CC10300228E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F6BB4A12A2CC10300228E6D /* Assets.xcassets */; };
 		6F6BB4A52A2CC10300228E6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F6BB4A42A2CC10300228E6D /* Preview Assets.xcassets */; };
 		6F6BB4DE2A2CC30500228E6D /* boards.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F6BB4DC2A2CC30500228E6D /* boards.json */; };
 		6F6BB4DF2A2CC30500228E6D /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6BB4DD2A2CC30500228E6D /* JSONParser.swift */; };
 		6F6BB4E22A2CC31400228E6D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6BB4E02A2CC31400228E6D /* Router.swift */; };
-		6F6BB4E62A2CC40100228E6D /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6BB4E52A2CC40100228E6D /* Movement.swift */; };
-		6F913D132A2EA4AD000E4DF3 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F913D122A2EA4AD000E4DF3 /* GameView.swift */; };
+		6F6BB4E62A2CC40100228E6D /* GameMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6BB4E52A2CC40100228E6D /* GameMovement.swift */; };
+		6F73377C2A2F9D1100FB8097 /* GameMovement+SCNContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F73377B2A2F9D1100FB8097 /* GameMovement+SCNContact.swift */; };
+		6F73377E2A2F9D9E00FB8097 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F73377D2A2F9D9E00FB8097 /* BallNode.swift */; };
 		6F913D152A2EABEB000E4DF3 /* CameraNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F913D142A2EABEB000E4DF3 /* CameraNode.swift */; };
 		6F913D172A2EAC1A000E4DF3 /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F913D162A2EAC1A000E4DF3 /* PlayerNode.swift */; };
 		6F913D1A2A2EACDC000E4DF3 /* FloorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F913D182A2EACDC000E4DF3 /* FloorNode.swift */; };
 		6F913D1B2A2EACDC000E4DF3 /* LightNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F913D192A2EACDC000E4DF3 /* LightNode.swift */; };
 		6F913D1D2A2EB000000E4DF3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F913D1C2A2EB000000E4DF3 /* Helpers.swift */; };
+		6F913D1F2A2F5A59000E4DF3 /* NPCNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F913D1E2A2F5A59000E4DF3 /* NPCNode.swift */; };
+		6F913D222A2F5B46000E4DF3 /* MechanicNPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F913D212A2F5B46000E4DF3 /* MechanicNPC.swift */; };
+		6FB414832A301371002FC854 /* catalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F60C5C22A2CF1F400487400 /* catalog.scnassets */; };
+		6FB414852A3013DA002FC854 /* Test.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6FB414842A3013DA002FC854 /* Test.scn */; };
+		6FB414892A30144D002FC854 /* idleFixedCopy.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6FB414882A30144D002FC854 /* idleFixedCopy.scn */; };
+		6FB4148D2A3014E4002FC854 /* walkFixed.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4148C2A3014E4002FC854 /* walkFixed.scn */; };
+		6FB414902A301564002FC854 /* pickFixed.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4148F2A301564002FC854 /* pickFixed.scn */; };
+		6FED54632A3004380016BFBB /* HUDMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED54622A3004380016BFBB /* HUDMovement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,13 +56,21 @@
 		6F6BB4DC2A2CC30500228E6D /* boards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = boards.json; sourceTree = "<group>"; };
 		6F6BB4DD2A2CC30500228E6D /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		6F6BB4E02A2CC31400228E6D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		6F6BB4E52A2CC40100228E6D /* Movement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
-		6F913D122A2EA4AD000E4DF3 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		6F6BB4E52A2CC40100228E6D /* GameMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMovement.swift; sourceTree = "<group>"; };
+		6F73377B2A2F9D1100FB8097 /* GameMovement+SCNContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameMovement+SCNContact.swift"; sourceTree = "<group>"; };
+		6F73377D2A2F9D9E00FB8097 /* BallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallNode.swift; sourceTree = "<group>"; };
 		6F913D142A2EABEB000E4DF3 /* CameraNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraNode.swift; sourceTree = "<group>"; };
 		6F913D162A2EAC1A000E4DF3 /* PlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
 		6F913D182A2EACDC000E4DF3 /* FloorNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorNode.swift; sourceTree = "<group>"; };
 		6F913D192A2EACDC000E4DF3 /* LightNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightNode.swift; sourceTree = "<group>"; };
 		6F913D1C2A2EB000000E4DF3 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		6F913D1E2A2F5A59000E4DF3 /* NPCNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPCNode.swift; sourceTree = "<group>"; };
+		6F913D212A2F5B46000E4DF3 /* MechanicNPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicNPC.swift; sourceTree = "<group>"; };
+		6FB414842A3013DA002FC854 /* Test.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Test.scn; sourceTree = "<group>"; };
+		6FB414882A30144D002FC854 /* idleFixedCopy.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = idleFixedCopy.scn; sourceTree = "<group>"; };
+		6FB4148C2A3014E4002FC854 /* walkFixed.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = walkFixed.scn; sourceTree = "<group>"; };
+		6FB4148F2A301564002FC854 /* pickFixed.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = pickFixed.scn; sourceTree = "<group>"; };
+		6FED54622A3004380016BFBB /* HUDMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDMovement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				6F60C5742A2CC54600487400 /* MovementView.swift */,
+				6FED54622A3004380016BFBB /* HUDMovement.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,7 +106,7 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		6F60C57D2A2CCEA500487400 /* Entities */ = {
+		6F60C57D2A2CCEA500487400 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
 				6F60C57F2A2CCEA500487400 /* PlayerFactory.swift */,
@@ -97,8 +114,10 @@
 				6F913D182A2EACDC000E4DF3 /* FloorNode.swift */,
 				6F913D192A2EACDC000E4DF3 /* LightNode.swift */,
 				6F913D162A2EAC1A000E4DF3 /* PlayerNode.swift */,
+				6F913D1E2A2F5A59000E4DF3 /* NPCNode.swift */,
+				6F73377D2A2F9D9E00FB8097 /* BallNode.swift */,
 			);
-			path = Entities;
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 		6F60C5882A2CCEB500487400 /* Game */ = {
@@ -106,7 +125,7 @@
 			children = (
 				6F60C5B52A2CEFD700487400 /* 3DModels */,
 				6F60C5762A2CCEA500487400 /* Components */,
-				6F60C57D2A2CCEA500487400 /* Entities */,
+				6F60C57D2A2CCEA500487400 /* Nodes */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -137,6 +156,10 @@
 		6F6BB49C2A2CC10100228E6D /* POC005-SceneKitMovement */ = {
 			isa = PBXGroup;
 			children = (
+				6FB414882A30144D002FC854 /* idleFixedCopy.scn */,
+				6FB4148C2A3014E4002FC854 /* walkFixed.scn */,
+				6FB414842A3013DA002FC854 /* Test.scn */,
+				6FB4148F2A301564002FC854 /* pickFixed.scn */,
 				6F60C5C22A2CF1F400487400 /* catalog.scnassets */,
 				6F6BB4E02A2CC31400228E6D /* Router.swift */,
 				6F6BB49D2A2CC10100228E6D /* POC005_SceneKitMovementApp.swift */,
@@ -194,11 +217,20 @@
 		6F6BB4E42A2CC39A00228E6D /* Movement */ = {
 			isa = PBXGroup;
 			children = (
-				6F6BB4E52A2CC40100228E6D /* Movement.swift */,
+				6F913D202A2F5B23000E4DF3 /* Mechanic */,
+				6F6BB4E52A2CC40100228E6D /* GameMovement.swift */,
+				6F73377B2A2F9D1100FB8097 /* GameMovement+SCNContact.swift */,
 				6F60C5732A2CC53900487400 /* Views */,
-				6F913D122A2EA4AD000E4DF3 /* GameView.swift */,
 			);
 			path = Movement;
+			sourceTree = "<group>";
+		};
+		6F913D202A2F5B23000E4DF3 /* Mechanic */ = {
+			isa = PBXGroup;
+			children = (
+				6F913D212A2F5B46000E4DF3 /* MechanicNPC.swift */,
+			);
+			path = Mechanic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +291,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB414892A30144D002FC854 /* idleFixedCopy.scn in Resources */,
+				6FB414832A301371002FC854 /* catalog.scnassets in Resources */,
+				6FB414852A3013DA002FC854 /* Test.scn in Resources */,
 				6F6BB4A52A2CC10300228E6D /* Preview Assets.xcassets in Resources */,
 				6F6BB4A22A2CC10300228E6D /* Assets.xcassets in Resources */,
+				6FB4148D2A3014E4002FC854 /* walkFixed.scn in Resources */,
+				6FB414902A301564002FC854 /* pickFixed.scn in Resources */,
 				6F6BB4DE2A2CC30500228E6D /* boards.json in Resources */,
-				6F60C5C32A2CF1F400487400 /* catalog.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,22 +309,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F913D1F2A2F5A59000E4DF3 /* NPCNode.swift in Sources */,
 				6F60C5872A2CCEA600487400 /* PlayerFactory.swift in Sources */,
 				6F60C5852A2CCEA600487400 /* GeometryComponent.swift in Sources */,
 				6F913D1A2A2EACDC000E4DF3 /* FloorNode.swift in Sources */,
 				6F913D1B2A2EACDC000E4DF3 /* LightNode.swift in Sources */,
 				6F60C5842A2CCEA600487400 /* ShineComponent.swift in Sources */,
+				6F73377E2A2F9D9E00FB8097 /* BallNode.swift in Sources */,
 				6F6BB4DF2A2CC30500228E6D /* JSONParser.swift in Sources */,
+				6F913D222A2F5B46000E4DF3 /* MechanicNPC.swift in Sources */,
 				6F60C5752A2CC54600487400 /* MovementView.swift in Sources */,
 				6F6BB4E22A2CC31400228E6D /* Router.swift in Sources */,
 				6F60C5802A2CCEA500487400 /* QuestionComponent.swift in Sources */,
 				6F60C5832A2CCEA500487400 /* PhysicsComponent.swift in Sources */,
+				6F73377C2A2F9D1100FB8097 /* GameMovement+SCNContact.swift in Sources */,
+				6FED54632A3004380016BFBB /* HUDMovement.swift in Sources */,
 				6F913D152A2EABEB000E4DF3 /* CameraNode.swift in Sources */,
-				6F6BB4E62A2CC40100228E6D /* Movement.swift in Sources */,
+				6F6BB4E62A2CC40100228E6D /* GameMovement.swift in Sources */,
 				6F60C5812A2CCEA500487400 /* MovementComponent.swift in Sources */,
 				6F913D1D2A2EB000000E4DF3 /* Helpers.swift in Sources */,
 				6F60C5822A2CCEA500487400 /* ScoreComponent.swift in Sources */,
-				6F913D132A2EA4AD000E4DF3 /* GameView.swift in Sources */,
 				6F6BB49E2A2CC10100228E6D /* POC005_SceneKitMovementApp.swift in Sources */,
 				6F913D172A2EAC1A000E4DF3 /* PlayerNode.swift in Sources */,
 			);
@@ -425,8 +465,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,8 +494,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

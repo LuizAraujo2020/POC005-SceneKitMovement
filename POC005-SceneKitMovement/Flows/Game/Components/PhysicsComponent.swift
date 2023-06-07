@@ -15,9 +15,9 @@ class PhysicsComponent: GKComponent {
         return entity?.component(ofType: GeometryComponent.self)
     }
     
-    init(category: PhysicsCategory,
-         contact: PhysicsCategory,
-         collision: PhysicsCategory,
+    init(category: PhysicsCategories,
+         contact: PhysicsCategories,
+         collision: PhysicsCategories,
          type: SCNPhysicsBodyType = .static) {
         super.init()
         

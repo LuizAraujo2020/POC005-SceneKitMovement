@@ -13,7 +13,7 @@ struct POC005_SceneKitMovementApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            MovementView(game: Movement())
+            MovementView(game: GameMovement())
         }
     }
 }
